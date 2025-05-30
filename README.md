@@ -2,7 +2,6 @@
 
 A specialized RAG (Retrieval-Augmented Generation) chatbot designed to provide expert assistance on IBM AIX operating systems and PowerHA.
 
-![AIX Systems Assistant Interface](screenshots/Screenshot%202025-05-28%20174939.png)
 
 ## Features
 
@@ -15,16 +14,15 @@ A specialized RAG (Retrieval-Augmented Generation) chatbot designed to provide e
 ## Screenshots
 
 ### Login Screen
-![Login Screen](screenshots/Screenshot%202025-05-28%20183418.png)
+![AIX Systems Assistant Interface](screenshots/Screenshot%202025-05-28%20174939.png)
 
 ### Main Chat Interface
-![Main Chat Interface](screenshots/Screenshot%202025-05-28%20174939.png)
+![Screenshot 2025-05-28 180508](https://github.com/user-attachments/assets/6461db26-ed63-4c1c-942c-95a8d288cd80)
 
-### Chat History
-![Chat History](screenshots/Screenshot%202025-05-28%20194149.png)
+### How the chatbot answer 
+![Screenshot 2025-05-28 194149](https://github.com/user-attachments/assets/8b239194-84b9-4903-bd8b-8d874d10f197)
+![Screenshot 2025-05-28 195457](https://github.com/user-attachments/assets/1e5e3c9f-7399-4cf5-a75f-e0457dbe4b3a)
 
-### Multiple Sessions
-![Multiple Sessions](screenshots/Screenshot%202025-05-28%20180508.png)
 
 ## Technology Stack
 

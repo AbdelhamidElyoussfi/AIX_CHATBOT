@@ -41,8 +41,8 @@ A specialized RAG (Retrieval-Augmented Generation) chatbot designed to provide e
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/aix-chatbot.git
-cd aix-chatbot
+git clone https://github.com/AbdelhamidElyoussfi/AIX_CHATBOT.git
+cd AIX_CHATBOT
 ```
 
 2. Install dependencies:
@@ -106,4 +106,4 @@ The application can be configured by editing the `config.py` file:
 ## Acknowledgments
 
 - IBM for AIX documentation
-- Open-source AI/ML community 
+- Open-source AI/ML community

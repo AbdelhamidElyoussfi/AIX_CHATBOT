@@ -1,0 +1,41 @@
+# Core ML dependencies
+torch==2.7.0
+transformers==4.51.3
+accelerate==1.6.0
+bitsandbytes==0.45.5
+peft==0.15.2
+safetensors==0.5.3
+
+# LangChain and vector store
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-core==0.3.60
+langchain-text-splitters==0.3.8
+sentence-transformers==4.1.0
+chromadb==1.0.9
+faiss-cpu==1.11.0
+
+# Document processing
+pypdf==5.5.0
+
+# Web framework
+Flask==3.1.1
+Flask-Login==0.6.3
+requests==2.32.3
+
+# Utilities
+tqdm==4.67.1
+python-dotenv==1.1.0
+pydantic==2.11.4
+numpy==2.2.5
+scipy==1.15.3
+scikit-learn==1.6.1
+
+# Additional dependencies
+PyYAML==6.0.2
+idna==3.10
+certifi==2025.4.26
+charset-normalizer==3.4.2
+typing-inspect==0.9.0
+typing-extensions>=4.12.2
+multidict==6.4.3 

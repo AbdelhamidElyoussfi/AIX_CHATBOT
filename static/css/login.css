@@ -1,0 +1,310 @@
+/* Login page with animated gradient background */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0e17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated gradient background */
+.background-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0e17;
+    z-index: -2;
+    overflow: hidden;
+}
+
+/* Animated gradient orbs */
+.gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+    animation: floatOrb 20s infinite ease-in-out;
+    z-index: -1;
+}
+
+.orb-1 {
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(123, 31, 162, 0.8), rgba(32, 0, 126, 0.4));
+    top: -10%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.8), rgba(190, 24, 93, 0.3));
+    bottom: -20%;
+    right: -10%;
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.8), rgba(79, 70, 229, 0.3));
+    top: 30%;
+    right: 20%;
+    animation-delay: -10s;
+}
+
+.orb-4 {
+    width: 35vw;
+    height: 35vw;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.7), rgba(56, 189, 248, 0.3));
+    bottom: 10%;
+    left: 20%;
+    animation-delay: -15s;
+}
+
+@keyframes floatOrb {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(5%, 5%) scale(1.05);
+    }
+    50% {
+        transform: translate(0, 10%) scale(0.95);
+    }
+    75% {
+        transform: translate(-5%, 5%) scale(1.05);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+/* Grid overlay */
+.grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Container wrapper to ensure proper centering */
+.container-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login container */
+.login-container {
+    background-color: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+    animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 8px 32px rgba(123, 31, 162, 0.3), 0 8px 32px rgba(236, 72, 153, 0.3);
+    }
+}
+
+.logo-section {
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4f46e5, #ec4899);
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+    animation: pulse 3s infinite alternate;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(236, 72, 153, 0.3);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(236, 72, 153, 0.7);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #4f46e5, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+p.subtitle {
+    color: #cbd5e1;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Error message */
+.error-message {
+    background-color: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #fecaca;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Tabs */
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-headers {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: #f1f5f9;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #4f46e5, #ec4899);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Forms */
+.auth-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #f1f5f9;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #4f46e5, #ec4899);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+
+.note {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 30px;
+} 
